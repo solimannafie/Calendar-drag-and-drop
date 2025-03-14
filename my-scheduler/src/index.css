@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sticky-controls {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .reset-button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .reset-button:hover {
+    background-color: darkred;
+  }
+  
+  .block-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .draggable-block {
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: grab;
+    transition: 0.3s;
+  }
+  
+  .draggable-block:hover {
+    background-color: darkblue;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100px repeat(5, 1fr);
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .day-header {
+    text-align: center;
+    font-weight: bold;
+    background-color: #eee;
+    padding: 10px;
+  }
+  
+  .time-column {
+    text-align: right;
+    padding: 5px;
+    font-weight: bold;
+    background-color: #eee;
+  }
+  
+  .droppable-slot {
+    height: 2rem;
+    border: 1px solid #ddd;
+    position: relative;
+  }
+  
+  .droppable-slot.occupied {
+    background-color: #007bff !important;
+    color: white;
+    border-color: #007bff !important;
+  }
+  
+  .droppable-slot.hovered {
+    background-color: #d1d1d1;
+  }
+  
+  .block-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #007bff !important;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 12px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    outline: 1px solid #007bff;
+  }
+  
+  .meeting-message {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+  }
+  
